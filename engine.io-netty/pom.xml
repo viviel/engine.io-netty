@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <artifactId>socket.io-netty</artifactId>
+        <artifactId>socket.io-java</artifactId>
         <groupId>com.github.viviel.socket.io</groupId>
         <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>engine.io</artifactId>
+    <artifactId>engine.io-netty</artifactId>
 
     <dependencies>
         <dependency>
