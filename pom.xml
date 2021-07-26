@@ -23,6 +23,10 @@
         <maven.compiler.target>${jdk.version}</maven.compiler.target>
 
         <netty.version>4.1.66.Final</netty.version>
+        <json.version>20201115</json.version>
+        <slf4j.version>1.7.30</slf4j.version>
+        <engine.io-client.version>2.0.0</engine.io-client.version>
+        <junit.version>5.7.2</junit.version>
     </properties>
 
     <dependencyManagement>
@@ -33,6 +37,32 @@
                 <version>${netty.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.json</groupId>
+                <artifactId>json</artifactId>
+                <version>${json.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.socket</groupId>
+                <artifactId>engine.io-client</artifactId>
+                <version>${engine.io-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
